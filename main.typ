@@ -57,7 +57,7 @@
 
 此手册内容源于我个人的经验和了解，不代表北邮官方和任何其他组织的观点和立场。由于我知识面有限，手册难免有疏漏之处，非常欢迎大家继续补充和完善，让它更加贴近同学们的实际需求。
 
-你可以在 #fa-icon("github") #link("https://github.com/YouXam/bupt-network-resources-guide")[YouXam/bupt-network-resources-guide] 上找到这份手册的源代码 上找到我，也欢迎提出 issue 和 pull request。
+你可以在 #fa-icon("github") #link("https://github.com/YouXam/bupt-network-resources-guide")[YouXam/bupt-network-resources-guide] 上找到这份手册的源代码，也欢迎提出 issue 和 pull request。
 
 最后，衷心祝愿各位学弟学妹在北邮取得圆满成就，未来都能在梦寐以求的事业领域施展才华，成就非凡！
 
