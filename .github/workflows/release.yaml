@@ -10,12 +10,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install dependencies
+        run: sudo apt install poppler-utils
+
       # Install Typst
       - uses: typst-community/setup-typst@v3
 
       # Compile the Typst file to PDF
       - name: Compile Typst file
         run: typst compile --font-path fonts main.typ bupt-network-resources-guide.pdf
+
+      - name: Generate preview
+        run: |
+          pdftoppm -jpeg -f 3 -l 3 -r 300 bupt-network-resources-guide.pdf preview
+          mv *.jpg preview.jpg
 
       # Upload the PDF to the release
       - name: Upload PDF to Release
@@ -27,3 +35,14 @@ jobs:
           asset_path: ./bupt-network-resources-guide.pdf
           asset_name: bupt-network-resources-guide.pdf
           asset_content_type: application/pdf
+
+      # Upload the preview to the release
+      - name: Upload Preview to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./preview.jpg
+          asset_name: preview.jpg
+          asset_content_type: image/jpeg

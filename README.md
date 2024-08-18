@@ -11,3 +11,5 @@
 ```bash
 typst compile --font-path fonts main.typ bupt-network-resources-guide.pdf
 ```
+
+<!-- https://github.com/YouXam/bupt-network-resources-guide/releases/latest/download/bupt-network-resources-guide.pdf -->
