@@ -21,43 +21,15 @@
 #let forewordcounter = counter("foreword")
 #let partcounter = counter("part")
 #let lengthceil(len, unit: 字号.小四) = calc.ceil(len / unit) * unit
-#let chinesenumber(num, standalone: false) = if num < 11 {
-  ("零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十").at(num)
-} else if num < 100 {
-  if calc.rem(num, 10) == 0 {
-    chinesenumber(calc.floor(num / 10)) + "十"
-  } else if num < 20 and standalone {
-    "十" + chinesenumber(calc.rem(num, 10))
-  } else {
-    chinesenumber(calc.floor(num / 10)) + "十" + chinesenumber(calc.rem(num, 10))
-  }
-} else if num < 1000 {
-  let left = chinesenumber(calc.floor(num / 100)) + "百"
-  if calc.rem(num, 100) == 0 {
-    left
-  } else if calc.rem(num, 100) < 10 {
-    left + "零" + chinesenumber(calc.rem(num, 100))
-  } else {
-    left + chinesenumber(calc.rem(num, 100))
-  }
-} else {
-  let left = chinesenumber(calc.floor(num / 1000)) + "千"
-  if calc.rem(num, 1000) == 0 {
-    left
-  } else if calc.rem(num, 1000) < 10 {
-    left + "零" + chinesenumber(calc.rem(num, 1000))
-  } else if calc.rem(num, 1000) < 100 {
-    left + "零" + chinesenumber(calc.rem(num, 1000))
-  } else {
-    left + chinesenumber(calc.rem(num, 1000))
-  }
-}
 
+#let chinese-outline = counter("chinese-outline")
 #let chinesenumbering(..nums, location: none, brackets: false) = locate(loc => {
+  
   let actual_loc = if location == none { loc } else { location }
   if forewordcounter.at(actual_loc).first() >= 10 {
     if nums.pos().len() == 1 {
-      "第" + chinesenumber(nums.pos().first(), standalone: true) + "章"
+      chinese-outline.step()
+      context chinese-outline.display("第一章")
     } else {
       numbering(if brackets { "(1.1)" } else { "1.1" }, ..nums)
     }
@@ -146,6 +118,8 @@
       line
     }
   })
+
+  chinese-outline.update(0)
 }
 
 
