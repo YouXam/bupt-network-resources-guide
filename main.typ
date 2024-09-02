@@ -298,7 +298,7 @@ Bitwarden 是一个密码管理器，支持多平台。北邮人团队提供了�
 + cargo
 + linux 相关软件源
 
-#h(2em)镜像站地址：https://mirrors.bupt.edu.cn/ #vpn 和 https://mirrors.byr.ink/ #vpn
+#h(2em)镜像站地址：https://mirrors.byr.ink/ #vpn
 
 == #link("https://git.byr.moe")[GitLab]
 
