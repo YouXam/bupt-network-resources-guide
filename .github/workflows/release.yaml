@@ -15,6 +15,8 @@ jobs:
 
       # Install Typst
       - uses: typst-community/setup-typst@v3
+        with: 
+          typst-version: 0.12.0
 
       # Compile the Typst file to PDF
       - name: Compile Typst file

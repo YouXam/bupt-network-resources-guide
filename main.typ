@@ -264,7 +264,8 @@
 
 + 电脑网页版：https://bbs.byr.cn；
 + 手机网页版（通过直链查看帖子无需登录，但不能发帖）：https://bbs.byr.cn/n
-+ 客户端
++ 新版客户端（BYR next)：https://bbs.byr.cn/#!article/Showcase/2481
++ 旧版客户端
   - App Store：https://apps.apple.com/cn/app/id1115232927
   - Android 下载：https://github.com/BYR-App-Dev/BYR_App_Android_Release/releases/latest/download/release.apk
   - Android 加速镜像：https://bbs.byr.cn/files/apk/byrbbs-android-app/latest/release.apk
@@ -275,7 +276,7 @@
 
 注：北邮人论坛是北邮人独有的精神家园，禁止外借账号使用，违者面临封禁风险。
 
-详细使用方式可见#link("https://mp.weixin.qq.com/s/cC7LivGeex88aO4a_mJrBg")[21 年版新生论坛指南]。
+详细使用方式可见#link("https://bbs.byr.cn/wiki/")[北邮人论坛使用指南]。
 
 北邮人论坛由#link("https://team.byrio.work/")[北邮人团队]维护和运营。
 
@@ -339,7 +340,7 @@ BYR Docs 是一个资料分享平台，旨在使北邮学生更方便地获取�
 
 == zlibrary
 
-#h(2em)https://zh.singlelogin.re/
+#h(2em)由于 zlibrary 的网址经常变动，建议查看维基百科（https://zh.wikipedia.org/wiki/Z-Library）找到 zlibrary 的网址。
 
 常用电子书下载网站。注意，zlibrary 有许多*假冒*网站（例如 #text(fill: red)[z-lib.io, z-lib.id, zlibrary.to]），请注意链接的正确性。zlibrary 官方并不强制要求收费下载电子书，凡要求付费下载电子资源的，一律为假冒网站。
 
