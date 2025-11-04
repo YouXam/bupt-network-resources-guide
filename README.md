@@ -1,5 +1,9 @@
 # bupt-network-resources-guide
 
+本项目不再维护，内容移至[北邮生存指南](https://github.com/byrdocs/bupt-survival-guide/)。
+
+---
+
 北邮网络资源手册，包含了北邮学生可能需要的各种网络资源的介绍和使用方法。
 
 目录预览：
